@@ -10,11 +10,14 @@ def promptForInt(s):
             print("You must enter an integer!")
 
 # Ask how many dice are being rolled
-num = promptForInt("How many dice are you rolling? ")
+num = promptForInt("How many dice are you rolling? (0 to stop) ")
 
-# Randomly calculate dice
-for i in range(num):
-    thisDie = random.randint(1,6)
-    # Display dice
-    print(f"[{thisDie}] ",end='')
-print()
+while(num != 0):
+    # Randomly calculate dice
+    for i in range(num):
+        thisDie = random.randint(1,6)
+        # Display dice
+        print(f"[{thisDie}] ",end='')
+    print()
+
+    num = promptForInt("How many dice are you rolling? (0 to stop) ")
