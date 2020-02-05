@@ -22,4 +22,8 @@ The dice rolling simulator will imitate the experience of rolling dice. It will 
         Specify how many sides each die has
         If not specified, defaults to 6-sided dice
 
+    -v, --verbose
+        Separate each die outcome with a comma 
+        If given twice, surround each with brackets for a slightly more graphical depiction
+        If not specified, separate each die outcome with a space
 
