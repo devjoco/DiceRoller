@@ -11,12 +11,10 @@ def promptForInt(s):
             print("You must enter an integer!")
 
 parser = argparse.ArgumentParser(description="Imitates the experience of rolling dice.")
-parser.add_argument("dice", nargs="?", help="how many dice are being rolled")
-parser.add_argument("-r", "--rolls", help="how many times the dice are rolled")
-parser.add_argument("-s", "--sides", help="how many sides each die will have",
-                    type=int, default=6)
+parser.add_argument("-n", "--num",  help="How many dice are being rolled")
+parser.add_argument("-r", "--rolls", help="How many times the dice are rolled")
+parser.add_argument("-s", "--sides", help="How many sides each die will have", type=int, default=6)
 args = parser.parse_args()
-
 
 if args.sides == 0:
     print("The dice must have at least 1 side!")
