@@ -16,7 +16,7 @@ The dice rolling simulator will imitate the experience of rolling dice. It will 
 
     -r, --rolls
         Specify how many rolls, and perform them all immediately
-        If not specified, waits for user to continue rolling
+        If not specified, prompts the user to continue rolling
 
     -s, --sides
         Specify how many sides each die has
